@@ -23,6 +23,8 @@ export const Layout = styled.div`
   align-items: flex-start;
   gap: 200px;
 
+  width: 1200px;
+
   margin: 150px 62px;
 `;
 export const MainImg = styled.img`

@@ -2,22 +2,23 @@ import { useEffect, useState } from "react";
 
 const useCountUp = (target: number) => {
   const [count, setCount] = useState(0);
+  const duration = 2000;
   const frame = 1000 / 60;
 
   useEffect(() => {
-    let currentNum = target;
+    let cnt = 0;
     const countup = setInterval(() => {
-      const countNum = Math.ceil(target - currentNum);
+      const current = ++cnt / (duration / frame);
 
-      if (currentNum < 0) {
+      if (current === 1) {
+        setCount(target);
         clearInterval(countup);
+      } else {
+        const percentage = 1 - Math.pow(2, -10 * current);
+        setCount(Math.ceil(percentage * target));
       }
-
-      const stepNum = currentNum / 10;
-      currentNum -= stepNum;
-      setCount(countNum);
     }, frame);
-  }, []);
+  }, [frame, target]);
 
   return count;
 };
