@@ -1,9 +1,10 @@
 import styled from "styled-components";
+import useCountUp from "../../hooks/useCountup";
 
 const Statistics = (num: number, desc: string) => {
   return (
     <>
-      <Strong>{num}만 명</Strong>
+      <Strong>{useCountUp(num)}만 명</Strong>
       {desc}
     </>
   );
