@@ -1,4 +1,8 @@
+<div align="center">
+
 # Triple Frontend
+
+</div>
 
 트리플 홈페이지의 한 섹션을 React, Typescript, Styled-Components를 이용하여 직접 구현해 보았습니다. 아래의 gif는 제가 구현한 프로젝트를 실행한 결과입니다.
 
