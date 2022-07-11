@@ -2,14 +2,9 @@
 
 # Triple Frontend
 
-</div>
-
-트리플 홈페이지의 한 섹션을 React, Typescript, Styled-Components를 이용하여 직접 구현해 보았습니다. 아래의 gif는 제가 구현한 프로젝트를 실행한 결과입니다.
-
-<div align="center">
   <img src="https://img.shields.io/badge/react-61DAFB?style=for-the-badge&logo=react&logoColor=black">
-  <img src="https://img.shields.io/badge/styledcomponents-DB7093?style=for-the-badge&logo=styledcomponents&logoColor=white"> 
   <img src="https://img.shields.io/badge/Typescript-3178C6?style=for-the-badge&logo=typescript&logoColor=white"/>
+  <img src="https://img.shields.io/badge/styledcomponents-DB7093?style=for-the-badge&logo=styledcomponents&logoColor=white"> 
   <br/>
   <img src="https://user-images.githubusercontent.com/70363530/178282732-cc515705-8fce-41ac-b67b-30136f1921db.gif"/>
   <br/>
