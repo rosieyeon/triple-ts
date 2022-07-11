@@ -22,6 +22,7 @@ export default App;
 export const Layout = styled.div`
   display: flex;
   align-items: flex-start;
+  justify-content: center;
   gap: 200px;
 
   width: 1200px;
