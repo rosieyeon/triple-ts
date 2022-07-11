@@ -49,13 +49,24 @@ function App() {
 export default App;
 
 export const MainImg = styled.img`
+  ${({ theme }) => theme.defaultAnimation}
   width: 400px;
 `;
 export const StatisticsSection = styled.div`
+  ${({ theme }) => theme.defaultAnimation}
+  opacity: 0;
+  animation-delay: 0.1s;
+
   font-size: 36px;
 `;
-export const Statistic = styled.div``;
+export const Statistic = styled.div`
+  padding-bottom: 20px;
+`;
 export const AwardsSection = styled.div`
+  ${({ theme }) => theme.defaultAnimation}
+  opacity: 0;
+  animation-delay: 0.2s;
+
   display: flex;
   gap: 40px;
 `;
