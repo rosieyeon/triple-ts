@@ -1,20 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-import Awards from "./components/awards/Awards";
-import Statistics from "./components/statistics/Statistics";
 
-const awardInfo = [
-  {
-    id: "1",
-    imgURL: "play-store",
-    desc: "2018 구글 플레이스토어\n올해의 앱 최우수상 수상",
-  },
-  {
-    id: "2",
-    imgURL: "badge-apple",
-    desc: "2018 애플 앱스토어\n올해의 여행앱 선정",
-  },
-];
+import AwardsItem from "./components/awards/AwardsItem";
+import Statistics from "./components/statistics/Statistics";
 
 const statisticsInfo = [
   { id: "1", number: 700, desc: "의 여행자" },
@@ -35,13 +23,7 @@ function App() {
           ))}
         </StatisticsSection>
 
-        <AwardsSection>
-          {awardInfo.map((award) => (
-            <Award key={award.id}>
-              {Awards(`${award.imgURL}`, `${award.desc}`)}
-            </Award>
-          ))}
-        </AwardsSection>
+        <AwardsItem />
       </div>
     </Layout>
   );
@@ -69,18 +51,4 @@ export const StatisticsSection = styled.div`
 `;
 export const Statistic = styled.div`
   padding-bottom: 20px;
-`;
-export const AwardsSection = styled.div`
-  ${({ theme }) => theme.defaultAnimation}
-  opacity: 0;
-  animation-delay: 0.2s;
-
-  display: flex;
-  gap: 40px;
-  padding-top: 30px;
-`;
-export const Award = styled.div`
-  display: flex;
-  align-items: center;
-  gap: 10px;
 `;
