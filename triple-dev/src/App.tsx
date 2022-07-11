@@ -24,30 +24,38 @@ const statisticsInfo = [
 
 function App() {
   return (
-    <div className="App">
+    <Layout>
       <MainImg src="images/triple.png" />
+      <div>
+        <StatisticsSection>
+          {statisticsInfo.map((statistics) => (
+            <Statistic key={statistics.id}>
+              {Statistics(statistics.number, `${statistics.desc}`)}
+            </Statistic>
+          ))}
+        </StatisticsSection>
 
-      <StatisticsSection>
-        {statisticsInfo.map((statistics) => (
-          <Statistic key={statistics.id}>
-            {Statistics(statistics.number, `${statistics.desc}`)}
-          </Statistic>
-        ))}
-      </StatisticsSection>
-
-      <AwardsSection>
-        {awardInfo.map((award) => (
-          <Award key={award.id}>
-            {Awards(`${award.imgURL}`, `${award.desc}`)}
-          </Award>
-        ))}
-      </AwardsSection>
-    </div>
+        <AwardsSection>
+          {awardInfo.map((award) => (
+            <Award key={award.id}>
+              {Awards(`${award.imgURL}`, `${award.desc}`)}
+            </Award>
+          ))}
+        </AwardsSection>
+      </div>
+    </Layout>
   );
 }
 
 export default App;
 
+export const Layout = styled.div`
+  display: flex;
+  align-items: flex-start;
+  gap: 200px;
+
+  margin: 150px 62px;
+`;
 export const MainImg = styled.img`
   ${({ theme }) => theme.defaultAnimation}
   width: 400px;
@@ -69,6 +77,7 @@ export const AwardsSection = styled.div`
 
   display: flex;
   gap: 40px;
+  padding-top: 30px;
 `;
 export const Award = styled.div`
   display: flex;
