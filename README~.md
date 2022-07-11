@@ -8,9 +8,8 @@
 
 <div align="center">
   <br/>
-  <img src="https://user-images.githubusercontent.com/70363530/178280368-708463fe-9f50-46d0-b8a2-7e6ab9151c1f.gif"/>
+  <img src="https://user-images.githubusercontent.com/70363530/178274446-486ccabb-4aba-41fc-ab7e-9f6d75b2593f.gif"/>
   <br/>
-
 
 </div>
 
