@@ -9,8 +9,14 @@ const Awards = (imgURL: string, desc: string) => {
   );
 };
 
-export const AwardImg = styled.img``;
+export const AwardImg = styled.img`
+  width: 64px;
+`;
 export const AwardDesc = styled.div`
   white-space: pre-wrap;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 22px;
 `;
+
 export default Awards;
